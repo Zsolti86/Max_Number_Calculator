@@ -1,0 +1,100 @@
+:root {
+  --color-marine: #0652dd;
+  --color-marine-rgba-full: rgba(6, 82, 221, 1);
+  --color-marine-rgba-transparent: rgba(6, 82, 221, 0.6);
+  --color-under-sea: #1b1464;
+  --color-red-pigment: #ea2027;
+  --background-color: #f9f9f9;
+  --color-link-active: #eee;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  height: 100vh;
+
+  background-color: var(--background-color);
+  background-image: url("https://images.pexels.com/photos/22690750/pexels-photo-22690750.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  justify-content: center; /* vízszintes középre */
+  align-items: center; /* függőleges középre */
+}
+
+.CalculateForm {
+  width: 100%;
+  max-width: 600px;
+  border: 2px solid var(--color-marine);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  background-color: var(--color-marine-rgba-full);
+  /*box-shadow: 5px 10px 8px 10px #343333;*/
+}
+
+h2 {
+  color: var(--color-link-active);
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  margin-bottom: 1em;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin: 1em 0;
+  flex-wrap: wrap;
+  padding: 1em;
+  border-radius: 6px;
+}
+
+fieldset legend {
+  font-weight: bold;
+  color: var(--color-link-active);
+  margin-bottom: 0.5em;
+}
+
+input,
+button {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #343333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-under-sea);
+}
+
+main {
+  margin-top: 1em;
+  padding: 0;
+  border-radius: 6px;
+}
+
+main p {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 1em;
+  border: 0.1em inset var(--color-marine);
+  border-radius: 0.25em;
+  background-color: #fff;
+  color: var(--color-red-pigment);
+}
